@@ -1,12 +1,13 @@
 # Learning Objectives
 
-## Spring Data Rest - Expose CRUD methods for free
+## Spring Data JPA - JpaRepository
 
-- Scan for JpaRepository
-- Expose REST APIs for each entity type for JpaRepository
-  - Create endpoints based on entity type
-  - Simple pluralized form
-    - First character of Entity is lower case
-    - Then adds an "s" to the end of the entity name
-- HATEOAS (meta-data for REST data)
-- Pagination, sorting and searching
+- Create DAO by plug in the enity type and primary key
+- Give a CRUD implementation for free
+- Minimize boiler-plate DAO code
+- Expose methods
+  - findAll()
+  - findById()
+  - save()
+  - deleteById()
+  - ...
